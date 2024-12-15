@@ -1,4 +1,4 @@
-﻿SELECT p.ProductName, c.CategoryName
+﻿SELECT p.Name AS ProductName, c.Name AS CategoryName
 FROM Products p
-         LEFT JOIN ProductCategories pc ON p.ProductID = pc.ProductID
-         LEFT JOIN Categories c ON pc.CategoryID = c.CategoryID
+         LEFT JOIN ProductCategories pc ON p.Id = pc.ProductId
+         LEFT JOIN Categories c ON pc.ProductId = c.Id
